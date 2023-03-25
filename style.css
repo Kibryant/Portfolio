@@ -101,6 +101,11 @@ abbr{
 }
     
 }
+@media screen and (max-width: 400px){
+    #titulo-secundario{
+    display: none;
+    }
+}
 
 header nav a
 {
@@ -303,6 +308,7 @@ main section h2
     #slim-reaper, #codwarzone, #jogador-favorito
     {
         background-image: none;
+        margin: auto;
     }
     .imagem{
         width: 90vw;
