@@ -1,0 +1,320 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+:root 
+{
+    --cor0: #F2E7DC;
+    --cor1: #D9CCC5;
+    --cor2: #737373;
+    --cor3: #404040;
+    --cor4: #0D0D0D;
+
+    --font: 'Poppins', sans-serif;
+}
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+html, body 
+{
+    font-family: var(--font);
+    min-width: 100vw;
+
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--cor0);
+
+}
+header
+{   
+    width: 95vw;
+    height: 45vh;
+    background-color: var(--cor1);
+    position: relative;
+    margin: auto;
+    border-radius: 20px;
+    
+}
+abbr{
+    text-decoration: underline;
+}
+#foto
+{   
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+    border-radius: 50%;
+    background: url(imagens/foto-de-perfil2.jpg) no-repeat;
+    background-position: left bottom;
+   
+    top: 40%;
+}
+@media (max-width: 1000px) {
+    #foto
+    {
+        width: 150px;
+        height: 150px;
+        top: 250px;
+        background-position: left center;
+    }
+    
+}
+@media (max-width: 900px) {
+    #foto
+    {
+        display: none;
+    }
+    
+}
+#titulo
+{   
+    margin: 15px;
+    line-height: 1.2;
+    text-align: left;
+    font-size: 2.5rem;
+    max-width: 100%;
+    
+}
+
+
+#titulo-secundario
+{
+    text-align: left;
+    font-size: 1.65rem;
+    width: 80vw;
+}
+@media (max-width: 480px )
+{  
+    #foto
+    {
+        display: none;
+    }
+
+    #titulo {
+    position: relative;
+    top: -20px;
+    font-size: 2em;
+
+}
+    
+}
+
+header nav a
+{
+    position: relative;
+    top: -10px;
+    padding-top: 10px;
+    padding-right: 15px;
+
+    float: right;
+    clear: left;
+
+   
+   
+      
+    
+    text-decoration: none;
+    color: var(--cor4);
+    font-size: 3em;
+}
+
+@media screen and (max-width: 480px) {
+    header nav a {
+        padding-top: 5px;
+        font-size: 2.5em;
+        top: 2px;
+        float: none;
+        clear: both;
+        margin-left: 10px;
+        
+    }
+
+    
+}
+header nav a:hover
+{
+    transform: translateY(-5px);
+    transition: .8s;
+    
+    color: var(--cor3);
+}
+#contato ul li
+{
+    text-align: left;
+}
+#contato
+{   
+    font-size: 20px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    font-weight: 500;
+}
+@media  (max-width:720px) {
+    #foto
+    {
+        display: none;
+    }
+    #contato
+    {
+        display: none;
+    }
+    
+}
+main{
+    display: block;
+    
+    font-size: 1.5em;
+    line-height: 1.2;
+    text-align: justify;
+    color: var(--cor4);
+    font-weight: 400;
+
+    padding-top: 50px;
+    width: 90vw;
+    margin: auto;
+    border-radius: 20px;
+}
+main h1
+{
+    text-align: center;
+    font-size: 1.5em;
+    padding: 10px;
+}
+
+
+main p
+{
+    margin: 10px;
+    padding: 5px;
+    letter-spacing: 0.5px;
+}
+main section h1
+{
+    text-align: center;
+    padding: 30px;
+}
+main section h2
+{
+    text-align: center;
+    padding-top: 30px;
+    font-size: 1.2em;
+}
+
+.textos1
+{   
+    padding: 15px 0 15px 0;
+    background-color: var(--cor1);
+    width: 90vw;
+    margin: auto;
+    border-radius: 20px;
+       
+}
+.textos1 nav ul
+{
+    padding: 30px 30px 0px;
+   
+    display: inline-flex;
+    flex-direction: column;
+   
+}
+.textos1 nav ul li a
+{
+    text-decoration: none;
+    color: var(--cor4);
+}
+.textos1 nav ul li a:hover
+{
+    color: var(--cor2);
+}
+.imagem
+{
+
+    background-color: var(--cor1);
+    
+    border-radius: 10px;
+    width: 90vw;
+    height: 85vh;
+    margin: auto;
+    padding-bottom: 80px;
+
+    
+
+
+}
+.imagem article
+{
+    color:  #f7f7f7;
+    text-align: center;
+    background-color: #0d0d0d52;
+    width: 400px;
+    position: relative;
+    top: 5%;
+    
+
+
+    
+    margin: 10px;
+    margin-top: 10px;
+    border-radius: 20px;
+    
+    
+    
+    font-weight: 500;
+}
+
+#jogador-favorito
+{
+    background: url(imagens/messi.jpg);
+    background-size: cover;
+    background-position: top center;
+    background-attachment: fixed;
+    height: 90vh;
+
+
+}
+#slim-reaper
+{
+    background: url(imagens/kevin-durant.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top center;
+
+}
+#codwarzone
+{
+    background: url(imagens/codwarzone.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+#slim-reaper a
+{
+    color: var(--cor0);
+    text-decoration: none;
+}
+@media screen and (max-width: 480px)
+{
+    .imagem{
+        width: 90vw;
+    }
+    .imagem article
+    {
+        margin: auto;
+    }
+
+}
+
+footer
+{
+    text-align: center;
+    font-size: 1.2em;
+    margin: 30px;
+    
+}
+
